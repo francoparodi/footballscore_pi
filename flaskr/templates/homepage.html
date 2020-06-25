@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+          <div class="row">
+            <div class="col">
+              <p class="channelLeftIncrement">
+                <a href="/increment/8">+</a>
+              </p>
+            </div>
+            <div class="col">
+              <p/>
+            </div>
+            <div class="col">
+              <p class="channelLeftIncrement">
+                <a href="/increment/12">+</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+                <p class="channelLeft" id="channel8"></p>
+            </div>
+            <div class="col">
+              <p class="channelSeparator" id="channelSeparator">:</p>
+            </div>
+            <div class="col">
+              <p class="channelRight" id="channel12"></p>
+            </div>
+          </div>
+        
+          <div class="row">
+            <div class="col">
+              <p class="channelLeftDecrement">
+                <a href="/decrement/8">-</a>
+              </p>
+            </div>
+            <div class="col">
+              <p/>
+            </div>
+            <div class="col">
+              <p class="channelRightDecrement">
+                <a href="/decrement/12">-</a>
+              </p>
+            </div>
+          </div>
+          
+</div>
+{% endblock %}

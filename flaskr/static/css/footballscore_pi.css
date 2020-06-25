@@ -1,0 +1,88 @@
+:root {
+    --red: rgb(212, 17, 36);
+    --blue: rgb(0, 132, 213);
+    --grey: rgb(62, 62, 62);
+    --dark-grey: rgb(38, 38, 38);
+    --white: white;
+    --channel-font-size: 180px;
+    --channel-controls-size: 50px;
+  }
+
+html, body {
+    background-color: var(--dark-grey);
+    font-family: 'Press Start 2P', cursive;
+}
+
+.navbar {
+    border-bottom: 1px solid var(--grey);
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background: var(--dark-grey);
+}
+
+.logo {
+    height: 50px;
+}
+
+.navbar-container {
+    max-width: 900px;
+}
+
+.content-container {
+    max-width: 900px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0px;
+}
+
+.status {
+    font-size: 50px;
+    margin-left: 18px;
+}
+
+.channelLeft {
+    font-size: var(--channel-font-size);
+    text-align: center;
+    color: var(--red);
+}
+
+.channelRight {
+    font-size: var(--channel-font-size);
+    text-align: center;
+    color: var(--blue);
+}
+
+.channelLeftIncrement {
+    font-size: var(--channel-controls-size);
+    text-align: center;
+    color: var(--red);
+}
+
+.channelRightIncrement {
+    font-size: var(--channel-controls-size);
+    text-align: center;
+    color: var(--blue);
+}
+
+.channelLeftDecrement {
+    font-size: var(--channel-controls-size);
+    text-align: center;
+    color: var(--red);
+}
+
+.channelRightDecrement {
+    font-size: var(--channel-controls-size);
+    text-align: center;
+    color: var(--blue);
+}
+
+.channelSeparator {
+    animation: blinker 1s linear infinite;
+    font-size: var(--channel-font-size);
+    text-align: center;
+    color: #00bc8c;
+}
+  
+@keyframes blinker {  
+    50% { opacity: 0.2; }
+}
